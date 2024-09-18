@@ -16,4 +16,3 @@ Author: [UTTAM BODARA](https://buymeacoffee.com/uttambodara)
 
 License: [MIT License](https://opensource.org/licenses/MIT)
 
-Tryhackme:[Tryhackme](https://tryhackme.com/p/utam)
