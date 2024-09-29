@@ -16,7 +16,7 @@ If you observe a web url that is of the form http://testphp.vulnweb.com/listprod
 
 So firstly, we have to enter the web url that we want to check along with the -u parameter. We may also use the –tor parameter if we wish to test the website using proxies. Now typically, we would want to test whether it is possible to gain access to a database. So we use the –dbs option to do so. –dbs lists all the available databases. 
 
-![Whois](img/website.png)
+![Whois](img/10.jpg)
 
 **Step 2: List information about Tables present in a particular Database📚💻** 
 
