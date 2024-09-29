@@ -51,7 +51,7 @@ Similarly, we can access the information in a specific column by using the follo
 ```
 sqlmap -u website url -D acuart -T artists -C aname --dump
 ``` 
-![Whois](img/8.png)
+![Whois](img/9.png)
 
 
 # Prevent SQL Injection💀
