@@ -18,7 +18,7 @@ So firstly, we have to enter the web url that we want to check along with the -u
 
 ![Whois](img/10.png)
 ```
- sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs 
+ sqlmap -u website url --dbs 
 ```
 ![Whois](img/2.png)
 
@@ -28,10 +28,10 @@ To try and access any of the databases, we have to slightly modify our command. 
 
 ![Whois](img/3.png)
 ```
- sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 
--D acuart --tables
+sqlmap -u website url -D acuart --tables
 ```
 ![Whois](img/4.png)
+
 **Step 3: List information about the columns of a particular table💻** 
 
 If we want to view the columns of a particular table, we can use the following command, in which we use -T to specify the table name, and –columns to query the column names. We will try to access the table ‘artists’. 
