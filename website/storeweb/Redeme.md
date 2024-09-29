@@ -10,4 +10,4 @@ SQL Injection is a code injection technique where an attacker executes malicious
 
 If you observe a web url that is of the form http://testphp.vulnweb.com/listproducts.php?cat=1, where the ‘GET’ parameter is in bold, then the website may be vulnerable to this mode of SQL injection, and an attacker may be able to gain access to information in the database. Furthermore, SQLMAP works when it is php based. 
 
-🔍 ![Whois](img/image.jpeg)
+🔍 ![Whois](img/website.png)
