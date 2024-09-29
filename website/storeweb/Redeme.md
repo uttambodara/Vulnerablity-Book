@@ -36,13 +36,22 @@ sqlmap -u website url -D acuart --tables
 
 If we want to view the columns of a particular table, we can use the following command, in which we use -T to specify the table name, and –columns to query the column names. We will try to access the table ‘artists’. 
 
-![Whois](img/3.png)
+![Whois](img/5.png)
+```
+sqlmap -u website url -D acuart -T artists --columns
+
+``` 
+![Whois](img/6.png)
 
 **Step 4: Dump the data from the columns💻**
 
 Similarly, we can access the information in a specific column by using the following command, where -C can be used to specify multiple column name separated by a comma, and the –dump query retrieves the data 
 
-![Whois](img/website.png)
+![Whois](img/7.png)
+```
+sqlmap -u website url -D acuart -T artists -C aname --dump
+``` 
+![Whois](img/8.png)
 
 
 # Prevent SQL Injection💀
