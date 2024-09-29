@@ -15,42 +15,42 @@ If you observe a web url that is of the form http://testphp.vulnweb.com/listprod
 **Step 1: List information about the existing databases📚** 
 
 So firstly, we have to enter the web url that we want to check along with the -u parameter. We may also use the –tor parameter if we wish to test the website using proxies. Now typically, we would want to test whether it is possible to gain access to a database. So we use the –dbs option to do so. –dbs lists all the available databases. 
-
-![Whois](img/10.png)
 ```
  sqlmap -u website url --dbs 
 ```
+![Whois](img/10.png)
+
 ![Whois](img/2.png)
 
 **Step 2: List information about Tables present in a particular Database📚💻** 
 
 To try and access any of the databases, we have to slightly modify our command. We now use -D to specify the name of the database that we wish to access, and once we have access to the database, we would want to see whether we can access the tables. For this, we use the –tables query. Let us access the accurate database. 
-
-![Whois](img/3.png)
 ```
 sqlmap -u website url -D acuart --tables
 ```
+![Whois](img/3.png)
+
 ![Whois](img/4.png)
 
 **Step 3: List information about the columns of a particular table💻** 
 
 If we want to view the columns of a particular table, we can use the following command, in which we use -T to specify the table name, and –columns to query the column names. We will try to access the table ‘artists’. 
-
-![Whois](img/5.png)
 ```
 sqlmap -u website url -D acuart -T artists --columns
 
 ``` 
+![Whois](img/5.png)
+
 ![Whois](img/6.png)
 
 **Step 4: Dump the data from the columns💻**
 
 Similarly, we can access the information in a specific column by using the following command, where -C can be used to specify multiple column name separated by a comma, and the –dump query retrieves the data 
-
-![Whois](img/7.png)
 ```
 sqlmap -u website url -D acuart -T artists -C aname --dump
 ``` 
+![Whois](img/7.png)
+
 ![Whois](img/9.png)
 
 
